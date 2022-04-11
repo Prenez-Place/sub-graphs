@@ -1,0 +1,26 @@
+specVersion: 0.0.1
+schema:
+  file: ./schema.graphql
+dataSources:
+  - kind: ethereum
+    name: Store
+    network: mumbai
+    source:
+      address: "0xb7413449779e362becAb23319350d6ba39bC8040"
+      abi: Store
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.5
+      language: wasm/assemblyscript
+      entities:
+        - Added
+        - Removed
+      abis:
+        - name: Store
+          file: ./abis/Store.json
+      eventHandlers:
+        - event: Added(string)
+          handler: handleAdded
+        - event: Removed(string)
+          handler: handleRemoved
+      file: ./src/mapping.ts

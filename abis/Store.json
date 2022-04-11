@@ -1,0 +1,46 @@
+[
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "fragment",
+        "type": "string"
+      }
+    ],
+    "name": "Added",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "fragment",
+        "type": "string"
+      }
+    ],
+    "name": "Removed",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      { "internalType": "string", "name": "_fragment", "type": "string" }
+    ],
+    "name": "add",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "string", "name": "_fragment", "type": "string" }
+    ],
+    "name": "remove",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]
